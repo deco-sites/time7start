@@ -24,22 +24,11 @@ export default function GetStarted({ enableInspectVSCode }: Props) {
           <div class="w-full md:w-1/2 p-6">
             <div class="md:max-w-lg">
               <h2 class="mb-3 font-bold text-primary-dark text-4xl">
-                Welcome to Live!
+                Seus clientes estão na web!
               </h2>
-              <p class="text-lg">
-                You can create a new page by visiting it.
+              <p class="text-xl">
+                e nós te ajudamos a encontrá-los, conectá-los e fidelizá-los.
               </p>
-              <p class="mb-4 text-lg">
-                Try any URL in the address bar 👆
-              </p>
-              {enableInspectVSCode && !context.deploymentId && (
-                <p class="mb-8 text-lg border border-dashed border-primary-dark p-4">
-                  <span class="italic">PROTIP:</span>{" "}
-                  Hit backtick (`) and click on any part of this page to
-                  navigate to the code in VSCode automatically. Hit ESC to exit
-                  inspect mode.
-                </p>
-              )}
             </div>
           </div>
         </div>

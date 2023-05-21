@@ -82,10 +82,13 @@
               "deco-sites/std/sections/SEOPLP.tsx",
               "deco-sites/time7start/sections/Benefits.tsx",
               "deco-sites/time7start/sections/DesignSystem.tsx",
+              "deco-sites/time7start/sections/Faq.tsx",
+              "deco-sites/time7start/sections/Faq2.tsx",
               "deco-sites/time7start/sections/Footer.tsx",
               "deco-sites/time7start/sections/GetStarted.tsx",
               "deco-sites/time7start/sections/Head.tsx",
               "deco-sites/time7start/sections/Header.tsx",
+              "deco-sites/time7start/sections/Services.tsx",
               "$live/matchers/MatchAlways.ts",
               "$live/matchers/MatchDate.ts",
               "$live/matchers/MatchEnvironment.ts",
@@ -7129,7 +7132,10 @@
           "title": "Title"
         },
         "description": {
-          "type": "string",
+          "type": [
+            "string",
+            "null"
+          ],
           "title": "Description"
         },
         "benefits": {
@@ -7146,7 +7152,6 @@
       },
       "required": [
         "title",
-        "description",
         "benefits"
       ],
       "title": "deco-sites/time7start/sections/Benefits.tsx@Props"
@@ -7482,6 +7487,95 @@
       "required": [],
       "title": "deco-sites/time7start/sections/DesignSystem.tsx@Props"
     },
+    "ZGVjby1zaXRlcy90aW1lN3N0YXJ0L3NlY3Rpb25zL0ZhcS50c3g=@FAQProps": {
+      "type": "object",
+      "properties": {
+        "questions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "question": {
+                "type": "string",
+                "title": "Question"
+              },
+              "answer": {
+                "type": "string",
+                "title": "Answer"
+              }
+            },
+            "required": [
+              "question",
+              "answer"
+            ]
+          },
+          "title": "Questions"
+        }
+      },
+      "required": [
+        "questions"
+      ],
+      "title": "deco-sites/time7start/sections/Faq.tsx@FAQProps"
+    },
+    "ZGVjby1zaXRlcy90aW1lN3N0YXJ0L3NlY3Rpb25zL0ZhcTIudHN4@Props": {
+      "type": "object",
+      "properties": {
+        "ancora": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Ancora"
+        },
+        "title": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Title"
+        },
+        "describe": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Describe"
+        },
+        "callToActionTitle": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Call To Action Title"
+        },
+        "callToActionDescribe": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Call To Action Describe"
+        },
+        "question": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "title": "Question"
+        },
+        "answer": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "title": "Answer"
+        }
+      },
+      "required": [
+        "question",
+        "answer"
+      ],
+      "title": "deco-sites/time7start/sections/Faq2.tsx@Props"
+    },
     "ZGVjby1zaXRlcy90aW1lN3N0YXJ0L3NlY3Rpb25zL0Zvb3Rlci50c3g=@Props": {
       "type": "object",
       "properties": {
@@ -7572,18 +7666,105 @@
       },
       "title": "MenuItem[]"
     },
+    "ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image": {
+      "type": "string",
+      "format": "image-uri",
+      "title": "Image"
+    },
     "ZGVjby1zaXRlcy90aW1lN3N0YXJ0L3NlY3Rpb25zL0hlYWRlci50c3g=@Props": {
       "type": "object",
       "properties": {
         "menu": {
           "$ref": "#/definitions/ZGVjby1zaXRlcy90aW1lN3N0YXJ0L3NlY3Rpb25zL0hlYWRlci50c3g=@MenuItem[]",
           "title": "Menu"
+        },
+        "logo": {
+          "type": "object",
+          "properties": {
+            "src": {
+              "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+              "title": "Src"
+            },
+            "alt": {
+              "type": "string",
+              "title": "Alt"
+            },
+            "href": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Href"
+            }
+          },
+          "required": [
+            "alt"
+          ],
+          "title": "Logo"
         }
       },
       "required": [
-        "menu"
+        "menu",
+        "logo"
       ],
       "title": "deco-sites/time7start/sections/Header.tsx@Props"
+    },
+    "ZGVjby1zaXRlcy90aW1lN3N0YXJ0L3NlY3Rpb25zL1NlcnZpY2VzLnRzeA==@Service": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "title": "Title"
+        },
+        "description": {
+          "type": "string",
+          "title": "Description"
+        }
+      },
+      "required": [
+        "title",
+        "description"
+      ],
+      "title": "Service"
+    },
+    "ZGVjby1zaXRlcy90aW1lN3N0YXJ0L3NlY3Rpb25zL1NlcnZpY2VzLnRzeA==@Service[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1zaXRlcy90aW1lN3N0YXJ0L3NlY3Rpb25zL1NlcnZpY2VzLnRzeA==@Service"
+      },
+      "title": "Service[]"
+    },
+    "ZGVjby1zaXRlcy90aW1lN3N0YXJ0L3NlY3Rpb25zL1NlcnZpY2VzLnRzeA==@Props": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "title": "Title"
+        },
+        "description": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Description"
+        },
+        "services": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy90aW1lN3N0YXJ0L3NlY3Rpb25zL1NlcnZpY2VzLnRzeA==@Service[]",
+          "title": "Services"
+        },
+        "ancora": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Ancora"
+        }
+      },
+      "required": [
+        "title",
+        "services"
+      ],
+      "title": "deco-sites/time7start/sections/Services.tsx@Props"
     },
     "ZGVjby1jeC9saXZlL21hdGNoZXJzL01hdGNoRGF0ZS50cw==@Props": {
       "type": "object",
@@ -9816,6 +9997,48 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy90aW1lN3N0YXJ0L3NlY3Rpb25zL0ZhcS50c3g=": {
+      "title": "deco-sites/time7start/sections/Faq.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy90aW1lN3N0YXJ0L3NlY3Rpb25zL0ZhcS50c3g=@FAQProps"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/time7start/sections/Faq.tsx"
+          ],
+          "default": "deco-sites/time7start/sections/Faq.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy90aW1lN3N0YXJ0L3NlY3Rpb25zL0ZhcTIudHN4": {
+      "title": "deco-sites/time7start/sections/Faq2.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy90aW1lN3N0YXJ0L3NlY3Rpb25zL0ZhcTIudHN4@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/time7start/sections/Faq2.tsx"
+          ],
+          "default": "deco-sites/time7start/sections/Faq2.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy90aW1lN3N0YXJ0L3NlY3Rpb25zL0Zvb3Rlci50c3g=": {
       "title": "deco-sites/time7start/sections/Footer.tsx",
       "type": "object",
@@ -9897,6 +10120,27 @@
             "deco-sites/time7start/sections/Header.tsx"
           ],
           "default": "deco-sites/time7start/sections/Header.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy90aW1lN3N0YXJ0L3NlY3Rpb25zL1NlcnZpY2VzLnRzeA==": {
+      "title": "deco-sites/time7start/sections/Services.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy90aW1lN3N0YXJ0L3NlY3Rpb25zL1NlcnZpY2VzLnRzeA==@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/time7start/sections/Services.tsx"
+          ],
+          "default": "deco-sites/time7start/sections/Services.tsx"
         }
       }
     },
@@ -10817,6 +11061,12 @@
           "$ref": "#/definitions/ZGVjby1zaXRlcy90aW1lN3N0YXJ0L3NlY3Rpb25zL0Rlc2lnblN5c3RlbS50c3g="
         },
         {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy90aW1lN3N0YXJ0L3NlY3Rpb25zL0ZhcS50c3g="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy90aW1lN3N0YXJ0L3NlY3Rpb25zL0ZhcTIudHN4"
+        },
+        {
           "$ref": "#/definitions/ZGVjby1zaXRlcy90aW1lN3N0YXJ0L3NlY3Rpb25zL0Zvb3Rlci50c3g="
         },
         {
@@ -10827,6 +11077,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy90aW1lN3N0YXJ0L3NlY3Rpb25zL0hlYWRlci50c3g="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy90aW1lN3N0YXJ0L3NlY3Rpb25zL1NlcnZpY2VzLnRzeA=="
         }
       ]
     },

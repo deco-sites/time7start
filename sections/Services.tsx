@@ -1,19 +1,19 @@
 export interface Props {
   title: string;
   description?: string;
-  benefits: Benefit[];
+  services: Service[];
   ancora?: string;
 }
 
-export interface Benefit {
+export interface Service {
   title: string;
   description: string;
 }
 
-export default function BenefitsTime7({
-  title = "Benefits title",
-  description = "Description of benefits",
-  benefits = [
+export default function ServicesTime7({
+  title = "Services title",
+  description = "Description of services",
+  services = [
     {
       title: "Benefit title",
       description: "Benefit description",
@@ -43,10 +43,10 @@ export default function BenefitsTime7({
         <p className="text-2xl text-base-400 text-center mb-10">
           {description}
         </p>
-        <div className="grid grid-cols-2 px-12 gap-4 sm:gap-8 sm:grid-cols-4 sm:p-0">
-          {benefits.map(({ title, description }) => (
-            <div className="flex flex-col items-center p-6 justify-center bg-custom-3 text-accent-content ">
-              <div className="mb-4">
+        <div className="flex flex-wrap">
+          {services.map(({ title, description }) => (
+            <div className="flex flex-col w-full sm:w-1/2 md:w-1/2 lg:w-1/3 p-6 bg-custom-3 text-accent-content ">
+              <div className="mb-4" style="display:none">
                 <svg
                   width="31"
                   height="30"
@@ -60,8 +60,8 @@ export default function BenefitsTime7({
                   />
                 </svg>
               </div>
-              <h3 className="text-xl mb-2">{title}</h3>
-              <p className="text-sm">{description}</p>
+              <h3 className="text-left text-xl mb-2">{title}</h3>
+              <p className="text-left text-sm">{description}</p>
             </div>
           ))}
         </div>
