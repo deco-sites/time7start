@@ -61,7 +61,7 @@ export default function BenefitsTime7({
                 </svg>
               </div>
               <h3 className="text-xl mb-2">{title}</h3>
-              <p className="text-sm">{description}</p>
+              <p className="text-sm text-center">{description}</p>
             </div>
           ))}
         </div>
