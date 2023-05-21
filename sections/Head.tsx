@@ -10,9 +10,9 @@ export interface Props {
 }
 
 export default function HeadComponent({
-  title = "deco.cx — starter site",
-  description = "Deliver complete commerce experiences — start here!",
-  url = "https://start.deco.site",
+  title = "Time 7 Start",
+  description = "Uma landing page simples",
+  url = "https://deco-sites-time7start.deno.dev/",
   imageUrl = "https://deco.cx/images/deco-logo-light.png",
   faviconUrl = "",
   themeColor = "#003232",
@@ -26,25 +26,35 @@ export default function HeadComponent({
       <meta property="og:description" content={description} />
       <meta property="og:type" content="website" />
       <meta property="og:url" content={url} />
-      <meta
-        property="og:image"
-        content={imageUrl}
-      />
+      <meta property="og:image" content={imageUrl} />
+      <link rel="shortcut icon" href={faviconUrl} type="image/x-icon"></link>
+
       <link
-        rel="shortcut icon"
-        href={faviconUrl}
-        type="image/x-icon"
+        rel="apple-touch-icon"
+        sizes="180x180"
+        href="/apple-touch-icon.png"
       >
       </link>
-
-      <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="32x32"
+        href="/favicon-32x32.png"
+      >
       </link>
-      <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-      </link>
-      <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="16x16"
+        href="/favicon-16x16.png"
+      >
       </link>
       <link rel="manifest" href="/site.webmanifest"></link>
-      <link rel="mask-icon" href="/safari-pinned-tab.svg" data-color="#003232">
+      <link
+        rel="mask-icon"
+        href="/safari-pinned-tab.svg"
+        data-color="#003232"
+      >
       </link>
       <meta name="theme-color" content="#003232"></meta>
       <meta name="msapplication-TileColor" content="#003232"></meta>
