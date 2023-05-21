@@ -36,7 +36,7 @@ export default function BenefitsTime7({
   return (
     <>
       <div
-        className="py-6 sm:py-10 sm:px-14 mb-32 bg-[#fafafa]"
+        className="py-6 sm:py-10 sm:px-14 mb-32 bg-[#fafafa] scroll-mt-8"
         id={ancora}
       >
         <div className="max-w-screen-xl mx-auto">

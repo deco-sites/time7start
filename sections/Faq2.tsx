@@ -28,7 +28,7 @@ export default function FAQ({
         {title ?? "FAQs"}
       </h2>
       <p className="mx-8 text-center px-16 text-lg xl:px-0">{describe}</p>
-      <div className="flex flex-col mt-20 px-4">
+      <div className="flex flex-col mt-8 sm:mt-20 px-4">
         {question.map((question, index) => (
           <>
             <div className="relative px-4 border-t border-[#AAAAAA]">
