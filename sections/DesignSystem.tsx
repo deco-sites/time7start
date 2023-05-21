@@ -26,7 +26,6 @@ export interface Colors {
    * @description Will be a readable tone of primary if not specified
    */
   "primary-content"?: string;
-
   /**
    * @format color
    * @default #8C3D3D
@@ -139,6 +138,11 @@ export interface Colors {
    * @description Will be a readable tone of info if not specified
    */
   "info-content"?: string;
+  /**
+   * @format color
+   * @default #f8f8f8
+   */
+  "custom-3"?: string;
 }
 
 export interface Miscellaneous {
