@@ -47,7 +47,7 @@ export default function FAQ({
                 <Icon id="ChevronDown" width={28} height={16} strokeWidth={4} />
               </div>
               <div className="max-h-0 overflow-hidden peer-checked:max-h-full ">
-                <p className="p-2 text-sm m-0">{answer[index]}</p>
+                <p className="p-2 text-sm m-0 mb-4">{answer[index]}</p>
               </div>
             </div>
           </>
