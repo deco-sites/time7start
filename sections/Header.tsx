@@ -36,11 +36,11 @@ export default function Header({
       <div className="container mx-auto px-4 flex justify-between h-12">
         <div className="flex items-center">
           <a href={logo.href} alt={logo.alt} className="max-w-[100px]">
-            {logo.src ? (
-              <img src={logo.src} alt={logo.alt} width="100" height="40" />
-            ) : (
-              logo.alt
-            )}
+            {logo.src
+              ? <img src={logo.src} alt={logo.alt} width="100" height="40" />
+              : (
+                logo.alt
+              )}
           </a>
         </div>
         <ul className="flex items-center justify-end gap-4">
