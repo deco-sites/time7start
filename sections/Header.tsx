@@ -32,7 +32,7 @@ export default function Header({
   },
 }: Props) {
   return (
-    <header className="w-full">
+    <header className="w-full fixed top-0 bg-base-100 z-50">
       <div className="container mx-auto px-4 flex justify-between h-12">
         <div className="flex items-center">
           <a href={logo.href} alt={logo.alt} className="max-w-[100px]">

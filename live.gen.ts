@@ -14,7 +14,8 @@ import * as $$$$$$$$4 from "./sections/Footer.tsx";
 import * as $$$$$$$$5 from "./sections/GetStarted.tsx";
 import * as $$$$$$$$6 from "./sections/Head.tsx";
 import * as $$$$$$$$7 from "./sections/Header.tsx";
-import * as $$$$$$$$8 from "./sections/Services.tsx";
+import * as $$$$$$$$8 from "./sections/Hero.tsx";
+import * as $$$$$$$$9 from "./sections/Services.tsx";
 import * as $live_middleware from "$live/routes/_middleware.ts";
 import * as $live_workbench from "$live/routes/live/workbench.ts";
 import * as $live_invoke from "$live/routes/live/invoke/index.ts";
@@ -188,7 +189,8 @@ const manifest = {
     "deco-sites/time7start/sections/GetStarted.tsx": $$$$$$$$5,
     "deco-sites/time7start/sections/Head.tsx": $$$$$$$$6,
     "deco-sites/time7start/sections/Header.tsx": $$$$$$$$7,
-    "deco-sites/time7start/sections/Services.tsx": $$$$$$$$8,
+    "deco-sites/time7start/sections/Hero.tsx": $$$$$$$$8,
+    "deco-sites/time7start/sections/Services.tsx": $$$$$$$$9,
   },
   "loaders": {
     "$live/loaders/workflows/events.ts": i2$$$0,

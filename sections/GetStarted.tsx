@@ -1,5 +1,6 @@
 import { context } from "$live/live.ts";
 import Image from "deco-sites/std/components/Image.tsx";
+import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
 
 export interface Props {
   enableInspectVSCode?: boolean;
@@ -9,7 +10,7 @@ export default function GetStarted({ enableInspectVSCode }: Props) {
   return (
     <section class="pt-20 pb-32">
       <div class="container mx-auto px-4">
-        <div class="flex flex-wrap items-center -m-6">
+        <div class="flex flex-wrap items-center sm:-m-6">
           <div class="w-full md:w-1/2 p-6">
             <div class="bg-[#2FD180] p-1 mx-auto max-w-max overflow-hidden rounded-full">
               <Image
