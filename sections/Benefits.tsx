@@ -40,7 +40,9 @@ export default function BenefitsTime7({
         id={ancora}
       >
         <div className="max-w-screen-xl mx-auto">
-          <h2 className="text-4xl text-base-500 text-center mb-2 px-4">{title}</h2>
+          <h2 className="text-4xl text-base-500 text-center mb-2 px-4">
+            {title}
+          </h2>
           <p className="text-2xl text-base-400 text-center mb-10">
             {description}
           </p>
