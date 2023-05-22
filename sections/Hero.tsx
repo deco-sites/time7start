@@ -1,6 +1,6 @@
-import { context } from '$live/live.ts';
-import Image from 'deco-sites/std/components/Image.tsx';
-import type { Image as LiveImage } from 'deco-sites/std/components/types.ts';
+import { context } from "$live/live.ts";
+import Image from "deco-sites/std/components/Image.tsx";
+import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
 
 export interface Props {
   title: string;
@@ -15,8 +15,8 @@ export interface Props {
 }
 
 export default function Hero({
-  title = 'Welcome to Live!',
-  description = 'You can create a new page by visiting it.',
+  title = "Welcome to Live!",
+  description = "You can create a new page by visiting it.",
   image,
 }: Props) {
   return (
@@ -25,24 +25,27 @@ export default function Hero({
         <div class="flex flex-wrap items-center sm:-m-6">
           <div class="w-full md:w-1/2 p-6">
             <div class="bg-[#2FD180] p-1 mx-auto max-w-max overflow-hidden rounded-full">
-              {image && image.src && image.alt ? (
-                <Image
-                  class="object-cover rounded-full"
-                  src={image.src}
-                  alt={image.alt}
-                  width={512}
-                  height={512}
-                  preload
-                />
-              ) : (
-                <Image
-                  class="object-cover rounded-full"
-                  src="https://start.deco.site/android-chrome-512x512.png"
-                  alt="Hero"
-                  width={512}
-                  height={512}
-                />
-              )}
+              {image && image.src && image.alt
+                ? (
+                  <Image
+                    class="object-cover rounded-full"
+                    src={image.src}
+                    alt={image.alt}
+                    width={512}
+                    height={512}
+                    preload
+                  />
+                )
+                : (
+                  <Image
+                    class="object-cover rounded-full"
+                    src="https://start.deco.site/android-chrome-512x512.png"
+                    alt="Hero"
+                    width={512}
+                    height={512}
+                    preload
+                  />
+                )}
             </div>
           </div>
           <div class="w-full md:w-1/2 p-6">
