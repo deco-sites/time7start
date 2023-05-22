@@ -33,7 +33,6 @@ export default function Hero({
                     alt={image.alt}
                     width={512}
                     height={512}
-                    preload
                   />
                 )
                 : (
@@ -43,7 +42,6 @@ export default function Hero({
                     alt="Hero"
                     width={512}
                     height={512}
-                    preload
                   />
                 )}
             </div>
