@@ -22,7 +22,7 @@ export default function FAQ({
   return (
     <div
       id={ancora}
-      className="mb-20 w-full max-w-screen-lg max-h-[781px] flex flex-col m-auto"
+      className="mb-20 w-full max-w-screen-lg flex flex-col m-auto"
     >
       <h2 className="text-4xl mt-16 mx-4 text-center mb-4">
         {title ?? "FAQs"}
