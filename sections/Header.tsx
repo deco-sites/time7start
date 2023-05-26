@@ -43,7 +43,34 @@ export default function Header({
               )}
           </a>
         </div>
-        <ul className="flex items-center justify-end gap-4">
+        <div className="dropdown  dropdown-bottom dropdown-end sm:hidden">
+          <label
+            tabIndex={0}
+            className="btn m-0 min-h-[48px] h-[48px] bg-white border-0 hover:bg-gray-200 -mr-4"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 96 960 960"
+            >
+              <path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z" />
+            </svg>
+          </label>
+          <ul
+            tabIndex={0}
+            className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
+          >
+            {menu.map((item: MenuItem) => (
+              <li>
+                <a className="hover:link" href={item.ancora}>
+                  {item.title}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <ul className="hidden items-center justify-end gap-4 sm:flex">
           {menu.map((item: MenuItem) => (
             <li>
               <a className="hover:link" href={item.ancora}>

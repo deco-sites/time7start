@@ -7100,6 +7100,11 @@
       ],
       "title": "deco-sites/std/components/seo/SEOPLP.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image": {
+      "type": "string",
+      "format": "image-uri",
+      "title": "Image"
+    },
     "ZGVjby1zaXRlcy90aW1lN3N0YXJ0L3NlY3Rpb25zL0JlbmVmaXRzLnRzeA==@Benefit": {
       "type": "object",
       "properties": {
@@ -7110,6 +7115,10 @@
         "description": {
           "type": "string",
           "title": "Description"
+        },
+        "image": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Image"
         }
       },
       "required": [
@@ -7666,11 +7675,6 @@
         "$ref": "#/definitions/ZGVjby1zaXRlcy90aW1lN3N0YXJ0L3NlY3Rpb25zL0hlYWRlci50c3g=@MenuItem"
       },
       "title": "MenuItem[]"
-    },
-    "ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image": {
-      "type": "string",
-      "format": "image-uri",
-      "title": "Image"
     },
     "ZGVjby1zaXRlcy90aW1lN3N0YXJ0L3NlY3Rpb25zL0hlYWRlci50c3g=@Props": {
       "type": "object",
