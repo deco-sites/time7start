@@ -39,7 +39,7 @@ export default function FAQ({
               />
               <label
                 htmlFor={`FAQ - ${index}`}
-                className="flex items-center text-lg my-5 leading-7"
+                className="flex items-center text-lg my-5 leading-7 cursor-pointer"
               >
                 {question}
               </label>
