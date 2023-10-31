@@ -51,6 +51,7 @@ export default function CookieConsentTime7(props: Props) {
             <button
               className="flex btn btn-square min-h-[40px] h-10 w-10 rounded-none bg-base-100 border-none fill-base-500 hover:bg-base-100 hover:opacity-75"
               data-button-cc-close
+              title="ok"
             >
               <svg
                 className="w-[14px] h-[14px]"
